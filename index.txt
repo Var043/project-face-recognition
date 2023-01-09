@@ -1,3 +1,96 @@
+*****************************************************************************
+***********ABOUT Face Recognition************
+
+Face recognition is a type of computer vision that uses 
+optical input to analyse an image—in this case,
+it looks particularly at faces that appear in the image. 
+Facial recognition technology can be used as a building block 
+to support other capabilities like face identification, grouping, 
+and verification.
+
+Face recognition is currently being used to make the world safer, 
+smarter, and more convenient.
+
+
+
+***********There are a few use cases :***********
+
+Finding Missing Person
+Retail Crime
+Security Identification
+Identifying accounts on social media
+School Attendance System
+Recognizing Drivers in Care
+
+
+
+***********Steps involved in a face recognition model:***********
+
+Face Detection: Locate faces and draw bounding boxes around faces and keep the coordinates of bounding boxes.
+Face Alignments: Normalize the faces to be consistent with the training database.
+Feature Extraction: Extract features of faces that will be used for training and recognition tasks.
+Face Recognition: Matching of the face against one or more known faces in a prepared database.
+
+
+
+************Understand the Working of Face Recognition*************
+
+We pass the person’s picture to the model(using face recognition & panda module ) and their name.
+The model takes every picture, converts them into some numerical encoding(face encodings),
+and stores them in a list and all the labels(names of persons) in another list.
+
+In the Prediction Phase when we pass a picture of an unknown person 
+recognition model converts the unfamiliar person’s Image into encoding.
+After converting an unknown person’s Image into encoding, it tries to find
+the most similar encoding based on the distance parameter(same like distance between two points). 
+The store encoding with the least distance from the encoding of an unknown person will 
+be the closest match. 
+After getting the closest match encoding(comparing them with tolerance 0.5), we take the index of 
+that encoding from that list and use indexing. We find the detected person’s name.
+
+
+
+****************************************************************************
+
+Python library Face-recognition is built on three important foundations. 
+1. CMake
+2. Dlib
+3. Open CV
+
+CMake: CMake is a cross-platform free an open 
+source software tool. This is used to manage the software building process using compiler 
+independent method.
+
+Dlib is a dynamic library. This is actually a 
+modem C++ to solve real life problem. This 
+contains machine learning algorithms and tools 
+for building complex software in C++ to solve real 
+life problem. Most of the Machine Learning 
+packages are built on Dlib
+
+Open CV (opensource computer vision)
+This is a very popular opensource library 
+implementing Computer Vision algorithms using 
+Machine Learning.
+
+
+Python Face Recognition Library
+Python is a language with thousands of libraries. Some estimates say that 
+there are more than 80,000 libraries. The library Face-recognition is used 
+to recognize and manipulate faces from Python.
+
+PIL is the acronym for Python Image Library. PIL has a set of methods used for Image 
+Processing activities. In PIL Library we use primarily three modules.
+1. PIL Image module
+2. PIL ImageDraw module
+3. PIL ImageFont module
+
+****************************************************************************
+
+
+
+*********ABOUT OUR PROJECT************
+
 AIM: our project is about attendance recording system using python
 
 Requirements: ref' database, face capture, face recognition, 
@@ -13,25 +106,28 @@ System Requirements & Design:
 
 
 
-
-
 Procedure: steps wise learning_ 
-1. Introduction to Face Recognition
-(we can indentify object, age, gender, state of mind,etc..)
 
-2. downloading cmake,dlib,opencv,modules_(pil,panda,face-recognition)
+1. setup resources : 
+python, pandas, visual stdio c++, cmake, dlib, face_recognition, PIL, opencv
 
-3. Face Signatures / landmarks & face encodings 
+2. Feature Extraction: Extract features of faces that will be used for training and recognition tasks.
+(Face Signatures / landmarks & face encodings)
 
-4. face location & and text creating on it.
+3. Face Detection: Locate faces and draw bounding boxes around faces and keep the coordinates of bounding boxes.
 
-5. distance function & face resemlance. and comparing 
-
-
-
-Precautions: 
-Persons photo should be current and clear.
-every month, make sure that all the things are going properly
+4. Face Recognition: Matching of the face against one or more known faces in a prepared database.
+(distance function & face resemlance and comparing)
 
 
 RESULT: 
+if matches, unknown picture diplayed with names and rectangle marked on it.
+
+
+
+***********Challenges in Recognition Systems************
+
+pose 
+expression
+low resolution
+Illumination
