@@ -1,0 +1,37 @@
+AIM: our project is about attendance recording system using python
+
+Requirements: ref' database, face capture, face recognition, 
+            attendance recording in data files, display & anounce name as audio.
+
+System Requirements & Design: 
+1. data load modules(panda)
+2. face capture module(camera using opencv)
+3. face recognise module(dlib/cmake & python face-recognition)
+4. attendance record module
+5. display attendance module
+6. anounce attendance module
+
+
+
+
+
+Procedure: steps wise learning_ 
+1. Introduction to Face Recognition
+(we can indentify object, age, gender, state of mind,etc..)
+
+2. downloading cmake,dlib,opencv,modules_(pil,panda,face-recognition)
+
+3. Face Signatures / landmarks & face encodings 
+
+4. face location & and text creating on it.
+
+5. distance function & face resemlance. and comparing 
+
+
+
+Precautions: 
+Persons photo should be current and clear.
+every month, make sure that all the things are going properly
+
+
+RESULT: 
