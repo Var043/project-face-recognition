@@ -1,4 +1,4 @@
-# software implementing Face Recognition using python  
+# Software Implemention of Face Recognition using Python  
 
 # ******* libraries & modules *******
 
@@ -49,9 +49,10 @@ left=l[0][3]
 fnt=ImageFont.truetype("fonts/arial",40)  
 
 # ******* after detection of face, writing his name on it and showing 
-
+bol = 0
 for i in range(n):
     if found[i]:
+        bol=1
         print(f"face matches with picture {i+1}")
         left=100
         bottom=emp[i].shape[0]
@@ -62,8 +63,10 @@ for i in range(n):
                 (left,top,right,bottom),
                 outline=(0,0,255),width=4)
         pil_uk.show()
+if bol==0: 
+    print(" sorry, face not recognise, please try again")
+       
 
-
-# output: a image will be dispayed with his name written on it.
+# output: unknown (uk) image will be dispayed with his name written on it.
 
 # ******* THANKYOU *******
