@@ -1,6 +1,6 @@
-************ project-face-recognition *****************
+***** project-face-recognition *****
 
-for this repository we have 4 items.
+for this repository we have 3 items.
 
 1.  data set:   employee.csv , pictures  &  unknown picture(uk... that is we gonna recognise)
 note:  data is just for educational purpose.
