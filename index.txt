@@ -1,30 +1,28 @@
-*****************************************************************************
-***********ABOUT Face Recognition************
 
-Face recognition is a type of computer vision that uses 
-optical input to analyse an image—in this case,
-it looks particularly at faces that appear in the image. 
-Facial recognition technology can be used as a building block 
-to support other capabilities like face identification, grouping, 
-and verification.
+*******************************ABOUT Face Recognition********************************
 
-Face recognition is currently being used to make the world safer, 
-smarter, and more convenient.
+Face recognition is a type of computer vision that uses optical input to analyse an image—in this case,
+it looks particularly at faces that appear in the image. Facial recognition technology can be used as a building block
+to support other capabilities like face identification, grouping, and verification.
+
 
 
 
 ***********There are a few use cases :***********
 
-Finding Missing Person
-Retail Crime
-Security Identification
-Identifying accounts on social media
-School Attendance System
-Recognizing Drivers in Care
+Face recognition is currently being used to make the world safer, 
+smarter, and more convenient.
+
+-Finding Missing Person
+-Retail Crime
+-Security Identification
+-Identifying accounts on social media
+-School Attendance System
+-Recognizing Drivers in Care
 
 
 
-***********Steps involved in a face recognition model:***********
+*****************Steps involved in a face recognition model:*****************
 
 Face Detection: Locate faces and draw bounding boxes around faces and keep the coordinates of bounding boxes.
 Face Alignments: Normalize the faces to be consistent with the training database.
@@ -33,7 +31,7 @@ Face Recognition: Matching of the face against one or more known faces in a prep
 
 
 
-************Understand the Working of Face Recognition*************
+*****************Understand the Working of Face Recognition*****************
 
 We pass the person’s picture to the model(using face recognition & panda module ) and their name.
 The model takes every picture, converts them into some numerical encoding(face encodings),
@@ -91,10 +89,9 @@ Processing activities. In PIL Library we use primarily three modules.
 
 *********ABOUT OUR PROJECT************
 
+
 AIM: our project is about attendance recording system using python
 
-Requirements: ref' database, face capture, face recognition, 
-            attendance recording in data files, display & anounce name as audio.
 
 System Requirements & Design: 
 1. data load modules(panda)
@@ -120,14 +117,30 @@ python, pandas, visual stdio c++, cmake, dlib, face_recognition, PIL, opencv
 (distance function & face resemlance and comparing)
 
 
+
 RESULT: 
+
 if matches, unknown picture diplayed with names and rectangle marked on it.
+else display, you are not recognignise.. try again.
 
 
 
-***********Challenges in Recognition Systems************
+**************Challenges Faced by Facial Recognition System****************
 
-pose 
-expression
-low resolution
-Illumination
+1.  Illumination
+Illumination stands for light variations.  
+The slight change in lighting conditions cause a significant challenge for automated face recognition 
+
+2.  Pose
+Facial Recognition Systems are highly sensitive to pose variations.
+
+3.  Expressions
+Face is one of the most crucial biometrics as its unique features play a crucial role in providing human identity and emotions. 
+
+4.  Low Resolution
+The minimum resolution for any standard image should be 16*16. 
+The picture with the resolution less than 16*16 is called the low resolution image. 
+
+
+
+***********************************THANK YOU**********************************
